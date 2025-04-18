@@ -304,40 +304,72 @@ nav ul li a:hover {
 .skills-section {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 60px 20px;
-  background: linear-gradient(to right, #f3e8ff, #fdf4ff);
+  background: linear-gradient(to right, #f9f5ff, #f5f0ff);
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-wrapper {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .skills-heading {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #5a189a;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.skills-container {
+.skills-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #9d4edd;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* Big lavender card */
+.skills-big-card {
+  background: #ede4ff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.big-card-title {
+  font-size: 2rem;
+  color: #5a189a;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Row inside lavender card */
+.tech-skills-row {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-top: 30px;
 }
 
+/* Individual white skill cards */
 .skills-card {
-  background: #fef6fb;
-  padding: 30px 40px;
+  background: white;
+  padding: 25px 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  max-width: 400px;
-  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 330px;
   text-align: left;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(90, 24, 154, 0.05);
 }
 
 .skills-card:hover {
@@ -345,10 +377,10 @@ nav ul li a:hover {
   box-shadow: 0 15px 30px rgba(90, 24, 154, 0.15);
 }
 
-.skills-card h3 {
+.skills-card h4 {
   color: #5a189a;
-  margin-bottom: 20px;
-  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .skills-card ul {
@@ -357,30 +389,52 @@ nav ul li a:hover {
 }
 
 .skills-card ul li {
-  position: relative;
-  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
   font-weight: 500;
   color: #3b0764;
 }
 
-.skills-card ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 7px;
-  width: 10px;
-  height: 10px;
-  background-color: #c77dff;
-  border-radius: 50%;
+.skills-card ul li img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
-.tech-card {
+/* Soft Skills Card */
+.soft-skills-card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1000px;
+  text-align: left;
+  box-shadow: 0 10px 20px rgba(90, 24, 154, 0.05);
+}
+
+.soft-skills-card h3 {
+  font-size: 1.8rem;
+  color: #5a189a;
+  margin-bottom: 20px;
+}
+
+.soft-skills-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.soft-skills-card ul li {
   background: #f3e8ff;
-}
-
-.soft-card {
-  background: #fef6fb;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: #3b0764;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(90, 24, 154, 0.05);
 }
 
 /* ===========Projects section ============*/
