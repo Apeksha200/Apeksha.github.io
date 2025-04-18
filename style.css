@@ -656,6 +656,48 @@ footer p {
   letter-spacing: 0.5px;
 }
 
+/* ===========PORTFOLIO DETAILS======= */
+.portfolio-card {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #f4f0fa;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.portfolio-card h2 {
+  color: #5e4b8b;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.details-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row span:first-child {
+  font-weight: 600;
+  color: #5e4b8b;
+  width: 180px;
+}
+
+.row span:last-child {
+  color: #333;
+  flex: 1;
+  padding-left: 1rem;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .button-group {
