@@ -389,21 +389,21 @@
       </p>
 
       <p class="google-intro__text">
-        At the core of Google’s reliability lies a foundation of advanced
-        algorithms and efficient data structures. These technologies power
-        everything from search ranking and ad targeting to video recommendations
-        and real-time navigation. It's this intelligent architecture that allows
-        Google to scale globally while delivering fast, accurate, and
-        personalized experiences.
+        &nbsp;&nbsp;At the core of Google’s reliability lies a foundation of
+        advanced algorithms and efficient data structures. These technologies
+        power everything from search ranking and ad targeting to video
+        recommendations and real-time navigation. It's this intelligent
+        architecture that allows Google to scale globally while delivering fast,
+        accurate, and personalized experiences.
       </p>
 
       <p class="google-intro__text">
-        Whether you're a student using Google Classroom, a software engineer
-        deploying code through Google Cloud, or simply checking your schedule on
-        Calendar — Google's tools are designed to be intuitive, high-performing,
-        and deeply integrated into everyday life. Its ecosystem represents the
-        perfect blend of simplicity and sophistication, built on decades of
-        innovation and data-driven engineering.
+        &nbsp;&nbsp;Whether you're a student using Google Classroom, a software
+        engineer deploying code through Google Cloud, or simply checking your
+        schedule on Calendar — Google's tools are designed to be intuitive,
+        high-performing, and deeply integrated into everyday life. Its ecosystem
+        represents the perfect blend of simplicity and sophistication, built on
+        decades of innovation and data-driven engineering.
       </p>
 
       <blockquote class="google-intro__quote">
@@ -523,12 +523,12 @@
         Exploring Google's Core Algorithms & System Designs
       </p>
     </section>
-
     <section class="business-case">
       <h2 class="business-case__heading">
         1. Email Auto-Complete & Lookup using <strong>Tries</strong> and
         <strong>Hash Tables</strong>
       </h2>
+
       <div class="business-case__content">
         <p>
           In modern email platforms, providing real-time suggestions as users
@@ -581,6 +581,772 @@
           details.
         </p>
       </div>
+
+      <!-- Continuation part starts here -->
+
+      <h3 class="business-case__subheading">Challenges</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Handling large datasets of email addresses efficiently without
+            slowing down user experience.
+          </li>
+          <li>
+            Maintaining low latency for auto-complete suggestions in real-time.
+          </li>
+          <li>
+            Balancing memory consumption, especially for Tries with large
+            alphabets.
+          </li>
+          <li>
+            Managing collisions and resizing in Hash Tables to maintain
+            performance.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Market Benefits</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Improved user satisfaction due to quick and accurate email
+            suggestions.
+          </li>
+          <li>Reduced typing effort and error rates in composing emails.</li>
+          <li>
+            Increased efficiency and productivity in email platforms and contact
+            search.
+          </li>
+          <li>
+            Competitive advantage for email clients offering seamless
+            auto-completion.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+      <div class="business-case__content">
+        <p>
+          <strong>Trie:</strong> Utilizes prefix trees where each node
+          represents a character. Words are inserted character by character,
+          enabling prefix matching by traversing nodes.
+        </p>
+        <p>
+          <strong>Hash Table:</strong> Implements a hash function to map email
+          addresses or user IDs to indices, supporting constant-time average
+          insertion, deletion, and lookup. Uses separate chaining or open
+          addressing to handle collisions.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Performance Analysis</h3>
+      <div class="business-case__content performance-metrics">
+        <h4 class="business-case__metric-heading">Tries</h4>
+        <p>
+          Time Complexity:<strong><code>O(N * L)</code></strong
+          >, where<code>N</code> is the number of words in the trie and
+          <code>L</code> is the length of the longest word.<br />
+          Auxiliary Space:
+          <strong> <code>O(N * L + N * ALPHABET_SIZE)</code></strong
+          >, due to nodes and child pointers.
+        </p>
+        <h4 class="business-case__metric-heading">Hash Tables</h4>
+        <p>
+          Average-case Time Complexity for lookup, insertion, and deletion:
+          <strong><code>O(1)</code></strong
+          >.<br />
+          Worst-case Time Complexity: <strong><code>O(n)</code></strong
+          >, where <code>n</code> is the number of elements in the table, due to
+          collisions.<br />
+          Space Complexity: <strong><code>O(n)</code></strong> for storing
+          elements.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Code Links</h3>
+      <div class="business-case__content github-links">
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Email_autocompletion/tries.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of Tries implementation
+          </a>
+        </div>
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Email_autocompletion/hashtables.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of Hashtable implementation
+          </a>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">
+        Inferences from this business case
+      </h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            <strong>Tries:</strong> Ideal for prefix-based searches, enabling
+            real-time suggestions as users type.
+          </li>
+          <li>
+            <strong>Hash Tables:</strong> Allow for rapid retrieval of user data
+            associated with email addresses.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- nect business case 2 -->
+    <section class="business-case">
+      <h2 class="business-case__heading">
+        2. Email Content Compression using <strong>Huffman Coding</strong>
+      </h2>
+
+      <div class="business-case__content">
+        <p>
+          Email services manage a vast amount of textual content. Compressing
+          this data reduces storage costs and improves transfer speed.
+          <strong>Huffman Coding</strong>, a lossless compression technique, is
+          ideal for this task.
+        </p>
+
+        <p>
+          &nbsp;&nbsp;It works by assigning shorter binary codes to frequently
+          occurring characters and longer codes to rare ones, ensuring efficient
+          encoding without ambiguity. This greedy approach results in optimal
+          space-saving representations.
+        </p>
+      </div>
+
+      <div class="business-case__image-wrapper">
+        <img
+          src="Algoritm_working_images_and_gifs/email_content_compression/huffman.gif"
+          alt="Huffman compression"
+          class="business-case__image"
+        />
+        <p class="business-case__image-caption">
+          [3] Huffman-based email text compression.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Challenges</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Building and storing the Huffman tree efficiently for
+            variable-length input.
+          </li>
+          <li>
+            Ensuring fast decoding without affecting system responsiveness.
+          </li>
+          <li>Adapting to multilingual and symbol-heavy content.</li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Market Benefits</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>Reduced backend storage and cloud hosting costs.</li>
+          <li>Faster email loading and delivery over networks.</li>
+          <li>Enhanced scalability for email service providers.</li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+      <div class="business-case__content">
+        <p>
+          <strong>Huffman Coding:</strong> A frequency-based binary tree
+          algorithm. Characters are encoded based on how often they appear,
+          producing prefix-free binary strings.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Performance Analysis</h3>
+      <div class="business-case__content performance-metrics">
+        <p>
+          Time Complexity: <strong><code>O(n log n)</code></strong> for building
+          the Huffman Tree.<br />
+          Space Complexity: <strong><code>O(n)</code></strong> for storing the
+          tree and codes.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Code Links</h3>
+      <div class="business-case__content github-links">
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Email_content_compression/huffman.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of Huffman Coding implementation
+          </a>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">
+        Inferences from this Business Case
+      </h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            <strong>Huffman Coding:</strong> Ideal for compressing repetitive
+            text-heavy content in emails.
+          </li>
+          <li>
+            Boosts performance by reducing data payloads without sacrificing
+            accuracy.
+          </li>
+          <li>
+            A foundational step toward more advanced compression formats like
+            GZIP and PNG.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3rd business case -->
+    <section class="business-case">
+      <h2 class="business-case__heading">
+        3. Efficient Search & Indexing for Databases, Search Engines, and
+        Caching Systems using <strong>Skip Lists</strong>
+      </h2>
+
+      <div class="business-case__content">
+        <p>
+          Modern systems like search engines, in-memory databases, and caching
+          frameworks require lightning-fast access to sorted data structures.
+          Traditional linked lists fall short in scalability and performance for
+          such use cases.
+        </p>
+        <p>
+          &nbsp;&nbsp;<strong>Skip Lists</strong> offer a probabilistic, layered
+          approach to data organization. They reduce traversal time by creating
+          multiple levels of linked lists where each higher level "skips" over
+          more elements enabling fast search, insert, and delete operations with
+          minimal structural overhead.
+        </p>
+      </div>
+
+      <div class="business-case__image-wrapper">
+        <img
+          src="Algoritm_working_images_and_gifs/searching_and_indexing/skip.gif"
+          alt="Skip list insertion animation"
+          class="business-case__image"
+          style="width: 600px; height: 260px"
+        />
+
+        <p class="business-case__image-caption">
+          [4] Skip list insertion process enabling indexed search.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Challenges</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Ensuring balanced levels through probabilistic node promotion.
+          </li>
+          <li>Controlling memory usage while maintaining multi-level links.</li>
+          <li>
+            Efficiently handling dynamic insertions and deletions in real-time
+            systems.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Market Benefits</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>Speeds up sorted data access in high-volume applications.</li>
+          <li>Reduces latency for user queries and caching mechanisms.</li>
+          <li>Scales smoothly with frequently changing datasets.</li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+      <div class="business-case__content">
+        <p>
+          <strong>Skip Lists:</strong> A hierarchical, probabilistically
+          balanced data structure using multiple linked list layers. Each
+          element is promoted to higher levels with decreasing probability,
+          enabling fast traversal paths.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Performance Analysis</h3>
+      <div class="business-case__content performance-metrics">
+        <p>
+          Time Complexity: <strong><code>O(log n)</code></strong> for
+          average-case search, insert, and delete operations.<br />
+          Space Complexity: <strong><code>O(n)</code></strong> due to the extra
+          pointers for layered lists.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Code Links</h3>
+      <div class="business-case__content github-links">
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Search_Indexing/skiplist.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of Skip List implementation
+          </a>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">
+        Inferences from this Business Case
+      </h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            <strong>Skip Lists</strong> offer a lightweight, high-performance
+            alternative to balanced trees.
+          </li>
+          <li>
+            They are well-suited for distributed caches, databases, and
+            real-time indexing systems.
+          </li>
+          <li>
+            Ideal when predictable average-case efficiency is preferred over
+            complex rebalancing logic.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4th case -->
+    <!-- 4th business case -->
+    <section class="business-case">
+      <h2 class="business-case__heading">
+        4. Detecting Spam in Communication Networks using
+        <strong>Depth-First Search (DFS)</strong>
+      </h2>
+
+      <div class="business-case__content">
+        <p>
+          In email networks or chat systems, spam messages often follow a hidden
+          pattern — like users sending the same message repeatedly or forming a
+          loop. <strong>Depth-First Search (DFS)</strong> helps uncover these
+          patterns by going deep into each connection and tracking how users are
+          linked.
+        </p>
+        <p>
+          DFS can find unusual paths or groups of accounts that are connected in
+          a suspicious way, such as cycles or isolated clusters. These can be
+          signs of spam bots or fake accounts working together.
+        </p>
+      </div>
+
+      <div class="business-case__image-wrapper">
+        <img
+          src="Algoritm_working_images_and_gifs/spam_filtering/dfs.gif"
+          alt="DFS graph traversal for spam detection"
+          class="business-case__image"
+        />
+        <p class="business-case__image-caption">
+          [5] DFS exploring message paths to find spam clusters.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Challenges</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>Detecting meaningful spam patterns in large message networks.</li>
+          <li>Avoiding mistakes like marking real users as spammers.</li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Market Benefits</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>Stops spam early by analyzing how messages travel.</li>
+          <li>
+            Makes messaging apps and email services more secure and reliable.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+      <div class="business-case__content">
+        <p>
+          <strong>DFS (Depth-First Search):</strong> Follows each path as far as
+          possible before backtracking. This helps find hidden loops or odd
+          message flows in the network that may indicate spam.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Performance Analysis</h3>
+      <div class="business-case__content performance-metrics">
+        <p>
+          Time Complexity: <strong><code>O(V + E)</code></strong> where
+          <code>V</code> = users, <code>E</code> = message links.<br />
+          Space Complexity: <strong><code>O(V)</code></strong> for visited
+          nodes.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Code Links</h3>
+      <div class="business-case__content github-links">
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/SpamDetection/dfs_spam.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of DFS-based Spam Detection implementation
+          </a>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">
+        Inferences from this Business Case
+      </h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            <strong>DFS</strong> is useful to track message paths and spot spam
+            behavior.
+          </li>
+          <li>Helps catch spam groups hiding in large networks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5th Business Case -->
+    <section class="business-case">
+      <h2 class="business-case__heading">
+        5. Best Server Selection for Low Latency using
+        <strong>Dijkstra’s / A* Algorithm</strong>
+      </h2>
+
+      <div class="business-case__content">
+        <p>
+          In a distributed cloud or edge environment, choosing the fastest
+          server from multiple options is critical.
+          <strong>Dijkstra’s Algorithm</strong> ensures minimum-cost routing by
+          evaluating all paths from the source to each destination.
+          <strong>A*</strong> adds a heuristic (like estimated network delay) to
+          prioritize closer nodes, offering a more efficient traversal in large
+          graphs.
+        </p>
+        <p>
+          &nbsp;&nbsp;These algorithms treat the entire network as a weighted
+          graph, where servers are nodes and latencies between them are edge
+          weights. The optimal server is the one at the end of the least-cost
+          path.
+        </p>
+      </div>
+
+      <div
+        class="business-case__image-wrapper"
+        style="
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          flex-wrap: wrap;
+        "
+      >
+        <div style="flex: 1 1 45%; max-width: 45%">
+          <img
+            src="Algoritm_working_images_and_gifs/best_server_Selection/dijktra1.gif"
+            alt="Dijkstra server path visualization 1"
+            class="business-case__image"
+          />
+          <p class="business-case__image-caption">
+            [6] Dijkstra finding shortest path among distributed nodes.
+          </p>
+        </div>
+        <div style="flex: 1 1 45%; max-width: 45%">
+          <img
+            src="Algoritm_working_images_and_gifs/best_server_Selection/dijktra2.gif"
+            alt="Dijkstra server path visualization 2"
+            class="business-case__image"
+          />
+          <p class="business-case__image-caption">
+            [7] Path optimization toward the most responsive server.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">Challenges</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Adapting to real-time changes in network latency and congestion.
+          </li>
+          <li>
+            Scaling efficiently with thousands of nodes and dynamic client
+            locations.
+          </li>
+          <li>
+            Balancing path cost with additional factors like server load and
+            uptime.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Market Benefits</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Ensures clients connect to the closest or fastest-responding server
+            automatically.
+          </li>
+          <li>
+            Reduces latency in time-critical apps (e.g., gaming, video calls,
+            trading systems).
+          </li>
+          <li>
+            Improves reliability by avoiding overloaded or distant servers
+            dynamically.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+      <div class="business-case__content">
+        <p>
+          <strong>Dijkstra’s Algorithm:</strong> Iteratively expands the
+          shortest known path from the source, updating costs and choosing the
+          next nearest node until all paths are resolved.
+        </p>
+        <p>
+          <strong>A* Algorithm:</strong> Adds a heuristic (e.g., geographic
+          proximity, estimated ping) to guide the search more intelligently
+          toward the best target.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Performance Analysis</h3>
+      <div class="business-case__content performance-metrics">
+        <h4 class="business-case__metric-heading">Dijkstra’s Algorithm</h4>
+        <p>
+          Time Complexity: <strong><code>O((V + E) log V)</code></strong
+          >, where <code>V</code> is the number of nodes and <code>E</code> is
+          the number of edges.<br />
+          Auxiliary Space: <strong><code>O(V)</code></strong> for storing
+          distances, visited states, and path tracking using a priority queue.
+        </p>
+
+        <h4 class="business-case__metric-heading">A* Algorithm</h4>
+        <p>
+          Time Complexity: <strong><code>O((V + E) log V)</code></strong> in the
+          best case, but performance depends heavily on the heuristic used. With
+          an admissible heuristic (e.g., geographic distance), it finds the
+          optimal path faster than Dijkstra.<br />
+          Auxiliary Space: <strong><code>O(V)</code></strong> due to open/closed
+          lists and heuristic maps.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Code Links</h3>
+      <div class="business-case__content github-links">
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Search_Indexing/skiplist.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of A* + Dijkstra implementation
+          </a>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">
+        Inferences from this Business Case
+      </h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Graph search algorithms like Dijkstra and A* are practical for
+            real-world server routing problems.
+          </li>
+          <li>
+            They adapt well to dynamic systems and deliver consistent, optimal
+            server decisions at scale.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6th Business Case -->
+    <section class="business-case">
+      <h2 class="business-case__heading">
+        6. Preventing Calendar Event Clashes using
+        <strong>Interval Trees</strong>
+      </h2>
+
+      <div class="business-case__content">
+        <p>
+          In digital calendars like Google Calendar, Outlook, or Apple Calendar,
+          ensuring no two events clash is vital for productivity and accuracy.
+          Manual checks are inefficient as events scale up. Thus, a fast,
+          algorithmic solution like an
+          <strong>Interval Tree</strong> is needed.
+        </p>
+        <p>
+          &nbsp;&nbsp;An Interval Tree stores each event as a time interval
+          (start–end). While adding a new event, the algorithm efficiently
+          checks if it overlaps with existing ones. This structure avoids
+          scanning every event and instead prunes non-overlapping paths,
+          enabling fast and scalable clash detection even with thousands of
+          events.
+        </p>
+      </div>
+
+      <div class="business-case__image-wrapper">
+        <img
+          src="Algoritm_working_images_and_gifs/preventing_overlapping_events/interval_tree.png"
+          alt="Interval Tree detecting overlapping calendar events"
+          class="business-case__image"
+        />
+        <p class="business-case__image-caption">
+          [8] Interval Tree highlighting overlapping events in calendar
+          scheduling.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Challenges</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Detecting overlapping meetings or reminders in real-time as users
+            add or move events.
+          </li>
+          <li>
+            Efficiently scaling to handle large shared calendars (corporate or
+            public).
+          </li>
+          <li>
+            Maintaining quick insertion and deletion without degrading
+            performance over time.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Market Benefits</h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Provides instant clash warnings, preventing scheduling conflicts and
+            double-booking.
+          </li>
+          <li>
+            Supports collaborative scheduling in teams, schools, or appointment
+            systems.
+          </li>
+          <li>
+            Reduces user frustration and increases reliability in digital
+            planner tools.
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+      <div class="business-case__content">
+        <p>
+          <strong>Interval Trees:</strong> A self-balancing binary search tree
+          storing intervals. Each node holds a range (e.g., 9:00 AM to 10:00 AM)
+          and tracks the maximum endpoint in its subtree. This allows the tree
+          to skip irrelevant branches during searches.
+        </p>
+        <p>
+          &nbsp;&nbsp;While inserting or querying an event, it compares time
+          overlaps recursively. If no intersection is found, it traverses
+          accordingly. Self-balancing versions (e.g., AVL-based Interval Trees)
+          keep operations consistently fast.
+        </p>
+        <p>
+          &nbsp;&nbsp;This approach is more efficient than sorting or linear
+          comparison methods, especially for dynamic real-time systems.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Performance Analysis</h3>
+      <div class="business-case__content performance-metrics">
+        <h4 class="business-case__metric-heading">Average Case</h4>
+        <p>
+          Time Complexity: <strong><code>O(n * log n)</code></strong
+          ><br />
+          Space Complexity: <strong><code>O(n + log n)</code></strong> (for node
+          storage and recursive stack).
+        </p>
+
+        <h4 class="business-case__metric-heading">
+          Worst Case (Unbalanced Tree)
+        </h4>
+        <p>
+          Time Complexity: <strong><code>O(n^2)</code></strong> due to deep
+          skewing.<br />
+          Space Complexity: <strong><code>O(2n)</code></strong> (nodes + stack
+          in worst case).
+        </p>
+
+        <h4 class="business-case__metric-heading">
+          Balanced Interval Tree (e.g., AVL-based)
+        </h4>
+        <p>
+          Time Complexity: <strong><code>O(log n)</code></strong> for search,
+          insertion, and deletion.<br />
+          Space Complexity: <strong><code>O(n)</code></strong> with optimized
+          tree depth.
+        </p>
+      </div>
+
+      <h3 class="business-case__subheading">Code Links</h3>
+      <div class="business-case__content github-links">
+        <div class="github-link">
+          <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+          <a
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Search_Indexing/skiplist.cpp"
+            class="github-link__text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View code of Interval tree implementation
+          </a>
+        </div>
+      </div>
+
+      <h3 class="business-case__subheading">
+        Inferences from this Business Case
+      </h3>
+      <div class="business-case__content">
+        <ul class="business-case__list">
+          <li>
+            Interval Trees offer a scalable, real-time clash detection mechanism
+            ideal for calendar apps.
+          </li>
+          <li>
+            They balance accuracy with performance, enabling conflict-free
+            scheduling in multi-user systems.
+          </li>
+        </ul>
+      </div>
+
+      </div>
     </section>
 
     <!-- References Section -->
@@ -604,6 +1370,61 @@
             target="_blank"
             >GeeksforGeeks. (n.d.). Hash Table Data Structure.</a
           >
+        </li>
+        <li>
+          <span class="reference-label">[3]</span>
+          Wikimedia Commons. “File.gif.” Available at:
+          <a href="https://commons.wikimedia.org/wiki/File.gif" target="_blank"
+            >Wikimedia Commons. (n.d.). File.gif.</a
+          >
+        </li>
+        <li>
+          <span class="reference-label">[4]</span>
+          Wikimedia Commons. “Skip List Insertion Animation.” Available at:
+          <a
+            href="https://en.m.wikipedia.org/wiki/File:Skip_list_add_element-en.gif"
+            target="_blank"
+            >Wikimedia Commons. (n.d.). Skip List Add Element.</a
+          >
+        </li>
+        <li>
+          <span class="reference-label">[5]</span>
+          Skiena, Steven. “DFS Animation for Graph Traversal.” Available at:
+          <a
+            href="https://www3.cs.stonybrook.edu/~skiena/combinatorica/animations/search.html"
+            target="_blank"
+          >
+            DFS Animation – Steven Skiena, Stony Brook University.
+          </a>
+        </li>
+        <li>
+          <span class="reference-label">[6]</span>
+          Brilliant.org. “Dijkstra's Shortest Path Finder.” Available at:
+          <a
+            href="https://brilliant.org/wiki/dijkstras-short-path-finder/"
+            target="_blank"
+            >Brilliant. (n.d.). Dijkstra’s Algorithm - Shortest Path.</a
+          >
+        </li>
+        <li>
+          <span class="reference-label">[7]</span>
+          Wikipedia. “Dijkstra’s Algorithm.” Available at:
+          <a
+            href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"
+            target="_blank"
+            >Wikipedia. (n.d.). Dijkstra’s Algorithm.</a
+          >
+        </li>
+        <li>
+          <span class="reference-label">[8]</span>
+          GeeksforGeeks. “Interval Tree.” Available at:
+          <a
+            href="https://www.geeksforgeeks.org/interval-tree/"
+            target="_blank"
+          >
+            GeeksforGeeks. (n.d.). Interval Tree – Efficient Time Interval
+            Search.
+          </a>
         </li>
       </ul>
     </section>
