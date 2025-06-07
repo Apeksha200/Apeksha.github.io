@@ -1018,7 +1018,7 @@ footer p {
 
 .title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #5a189a;
   background: linear-gradient(to right, #5a189a, #9d4edd);
@@ -1207,4 +1207,24 @@ footer p {
 
 .references__list a:hover {
   text-decoration: underline;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+#business-case-summary table a {
+  color: #6a1b9a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+#business-case-summary table a:hover {
+  color: #4a148c;
+  text-decoration: underline;
+}
+#business-case-summary table td,
+#business-case-summary table th {
+  vertical-align: top;
+  white-space: nowrap;
 }

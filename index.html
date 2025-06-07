@@ -11,33 +11,49 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <h1>Apeksha Bannigidad</h1>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#academic-projects">Projects</a></li>
-          <li><a href="#microsoft-business-cases">Business Cases</a></li>
-          <li><a href="#contact-details">Contact</a></li>
-        </ul>
-      </nav>
+  <header>
+  <nav>
+    <h1>Apeksha Bannigidad</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#academic-projects">Projects</a></li>
+      <li><a href="#business-case-summary">Business Cases</a></li>
+      <li><a href="#contact-details">Contact</a></li>
+    </ul>
+  </nav>
 
-      <div class="intro">
-        <p class="greeting">Hello , I'm Apeksha Bannigidad</p>
+  <div class="intro">
+    <p class="greeting">Hello , I'm Apeksha Bannigidad</p>
 
-        <blockquote class="quote">
-          Welcome to my world — where code meets chaos, ideas spark revolutions,
-          and passion runs the system.
-        </blockquote>
+    <blockquote class="quote">
+      Welcome to my world — where code meets chaos, ideas spark revolutions,
+      and passion runs the system.
+    </blockquote>
 
-        <div class="button-group">
-          <a href="#contact-details" class="btn primary">Connect With Me</a>
-          <a href="#academic-projects" class="btn secondary">View My Work</a>
-        </div>
-      </div>
-    </header>
+    <!-- Top Row Buttons -->
+    <div class="button-group" style="display: flex; justify-content: center; gap: 1rem;">
+      <a
+        href="Apeksha_Resume.pdf"
+        class="btn secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View My Resume
+      </a>
+      <a href="#academic-projects" class="btn secondary">View My Work</a>
+    </div>
+
+    <!-- Bottom Button -->
+    <div style="margin-top: 1.5rem; display: flex; justify-content: center;">
+      <a href="#contact-details" class="btn primary">Connect With Me</a>
+    </div>
+  </div>
+</header>
+
+
+
     <section id="portfolio-details" class="portfolio-professional">
       <div class="portfolio-container">
         <h2>Portfolio Details</h2>
@@ -523,7 +539,47 @@
         Exploring Google's Core Algorithms & System Designs
       </p>
     </section>
-    <section class="business-case">
+
+<section id="business-case-summary">
+  <h2 class="section-title">🧮 Algorithmic Insights Across Google Systems</h2>
+
+  <div class="underline"></div>
+  <div class="table-wrapper">
+    <table class="portfolio-table">
+      <thead>
+        <tr>
+          <th>Business Case</th>
+          <th>Algorithms Used</th>
+          <th>Time Complexity</th>
+          <th>Space Complexity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><a href="#business-case-1">Auto-Complete & Lookup</a></td><td>Trie, Hash Table</td><td>O(N*L), O(1)</td><td>O(N*L + N*A), O(n)</td></tr>
+        <tr><td><a href="#business-case-2">Email Compression</a></td><td>Huffman Coding</td><td>O(n log n)</td><td>O(n)</td></tr>
+        <tr><td><a href="#business-case-3">Search & Indexing</a></td><td>Skip List</td><td>O(log n)</td><td>O(n)</td></tr>
+        <tr><td><a href="#business-case-4">Spam Detection</a></td><td>DFS</td><td>O(V + E)</td><td>O(V)</td></tr>
+        <tr><td><a href="#business-case-5">Server Selection</a></td><td>Dijkstra, A*</td><td>O((V+E) log V)</td><td>O(V)</td></tr>
+        <tr><td><a href="#business-case-6">Calendar Clashes</a></td><td>Interval Tree</td><td>Avg: O(n log n), Worst: O(n^2)</td><td>O(n)</td></tr>
+        <tr><td><a href="#business-case-7">Dependency Resolver</a></td><td>Topological Sort</td><td>O(V + E)</td><td>O(V)</td></tr>
+        <tr><td><a href="#business-case-8">Web Crawling & Rank</a></td><td>DFS, BFS, PageRank</td><td>O(k*(V+E))</td><td>O(V+E)</td></tr>
+        <tr><td><a href="#business-case-9">Classroom Matching</a></td><td>Bipartite Matching</td><td>O(V * E)</td><td>O(V + E)</td></tr>
+        <tr><td><a href="#business-case-10">User Communities</a></td><td>Kosaraju, Tarjan</td><td>O(V + E)</td><td>O(V^2)</td></tr>
+        <tr><td><a href="#business-case-11">Route Planning</a></td><td>Dijkstra, Bellman-Ford, FW</td><td>O((V+E) log V), O(VE), O(V^3)</td><td>O(V), O(V), O(V^2)</td></tr>
+        <tr><td><a href="#business-case-12">Resource Allocation</a></td><td>Assignment Problem</td><td>O(2N * N)</td><td>O(N^2)</td></tr>
+        <tr><td><a href="#business-case-13">Tab Management</a></td><td>LRU Cache</td><td>O(1)</td><td>O(N)</td></tr>
+        <tr><td><a href="#business-case-14">File Search</a></td><td>Segment Tree</td><td>O(log N)</td><td>O(N)</td></tr>
+        <tr><td><a href="#business-case-15">Plagiarism Check</a></td><td>KMP, Rabin-Karp</td><td>O(n + m)</td><td>O(m)</td></tr>
+        <tr><td><a href="#business-case-16">Face Clustering</a></td><td>KD Tree</td><td>Avg: O(log n), Worst: O(n)</td><td>O(log n)</td></tr>
+        <tr><td><a href="#business-case-17">Sheets Range Sum</a></td><td>Fenwick Tree</td><td>O(log N)</td><td>O(N)</td></tr>
+        <tr><td><a href="#business-case-18">News Personalization</a></td><td>Red-Black Tree</td><td>O(log n)</td><td>O(n)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+    <section class="business-case" id="business-case-1">
       <h2 class="business-case__heading">
         1. Email Auto-Complete & Lookup using <strong>Tries</strong> and
         <strong>Hash Tables</strong>
@@ -707,7 +763,7 @@
     </section>
 
     <!-- nect business case 2 -->
-    <section class="business-case">
+    <section class="business-case" id="business-case-2">
       <h2 class="business-case__heading">
         2. Email Content Compression using <strong>Huffman Coding</strong>
       </h2>
@@ -818,7 +874,7 @@
     </section>
 
     <!-- 3rd business case -->
-    <section class="business-case">
+    <section class="business-case" id="business-case-3">
       <h2 class="business-case__heading">
         3. Efficient Search & Indexing for Databases, Search Engines, and
         Caching Systems using <strong>Skip Lists</strong>
@@ -901,7 +957,7 @@
         <div class="github-link">
           <img src="images/github.png" alt="GitHub" class="github-link__icon" />
           <a
-            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Search_Indexing/skiplist.cpp"
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/searching_and_indexing/skip_list.cpp"
             class="github-link__text"
             target="_blank"
             rel="noopener noreferrer"
@@ -934,7 +990,7 @@
 
     <!-- 4th case -->
     <!-- 4th business case -->
-    <section class="business-case">
+    <section class="business-case" id="business-case-4">
       <h2 class="business-case__heading">
         4. Detecting Spam in Communication Networks using
         <strong>Depth-First Search (DFS)</strong>
@@ -1008,7 +1064,7 @@
         <div class="github-link">
           <img src="images/github.png" alt="GitHub" class="github-link__icon" />
           <a
-            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/SpamDetection/dfs_spam.cpp"
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/spam_detection/dfs.cpp"
             class="github-link__text"
             target="_blank"
             rel="noopener noreferrer"
@@ -1033,7 +1089,7 @@
     </section>
 
     <!-- 5th Business Case -->
-    <section class="business-case">
+    <section class="business-case" id="business-case-5">
       <h2 class="business-case__heading">
         5. Best Server Selection for Low Latency using
         <strong>Dijkstra’s / A* Algorithm</strong>
@@ -1164,7 +1220,7 @@
         <div class="github-link">
           <img src="images/github.png" alt="GitHub" class="github-link__icon" />
           <a
-            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Search_Indexing/skiplist.cpp"
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/best_server_selection/A_star_plus_dijkstra.cpp"
             class="github-link__text"
             target="_blank"
             rel="noopener noreferrer"
@@ -1192,7 +1248,7 @@
     </section>
 
     <!-- 6th Business Case -->
-    <section class="business-case">
+    <section class="business-case" id="business-case-6"> 
       <h2 class="business-case__heading">
         6. Preventing Calendar Event Clashes using
         <strong>Interval Trees</strong>
@@ -1217,11 +1273,13 @@
       </div>
 
       <div class="business-case__image-wrapper">
-        <img
-          src="Algoritm_working_images_and_gifs/preventing_overlapping_events/interval_tree.png"
-          alt="Interval Tree detecting overlapping calendar events"
-          class="business-case__image"
-        />
+      <img
+  src="Algoritm_working_images_and_gifs/preventing_overlapping_events/interval_tree.png"
+  alt="Interval Tree detecting overlapping calendar events"
+  class="business-case__image"
+  style="width: 500px; height: 300px;"
+/>
+
         <p class="business-case__image-caption">
           [8] Interval Tree highlighting overlapping events in calendar
           scheduling.
@@ -1320,7 +1378,7 @@
         <div class="github-link">
           <img src="images/github.png" alt="GitHub" class="github-link__icon" />
           <a
-            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Search_Indexing/skiplist.cpp"
+            href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/prevent_overlapping_events/interval_tree.cpp"
             class="github-link__text"
             target="_blank"
             rel="noopener noreferrer"
@@ -1349,6 +1407,1303 @@
       </div>
     </section>
 
+
+    <!-- 7th case -->
+     <section class="business-case" id="business-case-7">
+  <h2 class="business-case__heading">
+    7. Build System Dependency Resolution using
+    <strong>Topological Sort</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      In modern large-scale software projects like <strong>Google Chrome</strong>, <strong>Android builds</strong>, or <strong>GitHub Actions</strong>, software components depend on each other and must be compiled in a precise order.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;To manage this, build systems like <strong>npm</strong>, <strong>Bazel</strong>, <strong>Gradle</strong>, and <strong>Make</strong> represent these dependencies as a <strong>Directed Acyclic Graph (DAG)</strong>. Here, nodes are tasks/modules, and edges represent dependencies. <strong>Topological Sort</strong> provides an efficient method to determine the correct order of compilation and detect dependency cycles early.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/dependency_resolution/topo.gif"
+      alt="Topological Sort Dependency Graph for Build System"
+      class="business-case__image"
+      style="width: 600px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [9] Topological Sort determining safe build order in dependency graph.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Handling deeply nested and complex build dependency chains.</li>
+      <li>Detecting circular dependencies that can break build processes.</li>
+      <li>Maximizing parallelism without violating task dependencies.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Builds are faster by allowing independent modules to compile in parallel.</li>
+      <li>Errors like cyclic dependencies are caught early in the pipeline.</li>
+      <li>Build order is deterministic, improving reliability and reproducibility.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+  <div class="business-case__content">
+    <p>
+      <strong>Topological Sort:</strong> Orders tasks such that a node appears before all nodes it points to. This allows dependencies to always be compiled before the module needing them.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;The standard method uses a <strong>DFS traversal</strong> with a stack to record build order. If a cycle is detected during DFS, the graph is not a DAG, and a build error is raised. Tools like <strong>Bazel</strong> and <strong>Gradle</strong> use advanced variations for performance and caching.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;This algorithm ensures modules are built only when their dependencies are resolved, allowing parallel builds where possible.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+    <h4 class="business-case__metric-heading">Topological Sort using DFS</h4>
+    <p>
+      Time Complexity: <strong><code>O(V + E)</code></strong> where <code>V</code> is number of tasks and <code>E</code> is number of dependencies.<br />
+      Space Complexity: <strong><code>O(V)</code></strong> due to the recursion stack and visited list.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Dependency_resolution/topological_Sort.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View code of Topological Sort for build system
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences from this Business Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Topological Sort is a backbone of dependency-safe compilation systems.</li>
+      <li>It guarantees correctness, prevents cyclic failures, and enables scalable parallel builds.</li>
+      <li>Crucial for developer productivity and CI/CD system optimization.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- case 8 -->
+ <section class="business-case" id="business-case-8">
+  <h2 class="business-case__heading">
+    8. Web Crawling & Page Ranking in Google Search using
+    <strong>DFS, BFS & PageRank</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google Search relies heavily on algorithms like <strong>DFS</strong>, <strong>BFS</strong>, and <strong>PageRank</strong> to explore the web and rank content. Web crawling begins by visiting a set of seed pages and then uses these graph traversal techniques to discover all reachable pages via hyperlinks.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;<strong>DFS (Depth-First Search)</strong> explores each branch of the web deeply before backtracking, which helps in in-depth crawling of websites. On the other hand, <strong>BFS (Breadth-First Search)</strong> is used for level-wise traversal — ideal for discovering widely linked but shallow pages early. Once the web graph is crawled, <strong>PageRank</strong> uses link structures to rank pages based on their importance using probability distribution.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+  <div class="business-case__content">
+    <p>
+      <strong>DFS:</strong> A recursive graph traversal algorithm that uses a stack (implicit via recursion) to go deep into hyperlinks before backtracking. It’s useful for exhaustive crawling and prioritizing long chains of related documents.
+    </p>
+    <div class="business-case__image-wrapper">
+      <img
+        src="Algoritm_working_images_and_gifs/google_pageRank/dfs.gif"
+        alt="DFS web crawling"
+        class="business-case__image"
+        style="width: 500px; height: 370px;"
+      />
+      <p class="business-case__image-caption">[5] DFS crawling through web links deeply</p>
+    </div>
+
+    <p>
+      <strong>BFS:</strong> A queue-based algorithm that explores all neighbors (linked pages) before moving to the next level. It’s ideal for discovering popular and high-impact domains quickly.
+    </p>
+    <div class="business-case__image-wrapper">
+      <img
+        src="Algoritm_working_images_and_gifs/google_pageRank/bfs.gif"
+        alt="BFS web crawling"
+        class="business-case__image"
+        style="width: 500px; height: 370px;"
+      />
+      <p class="business-case__image-caption">[5] BFS crawling the web in layers</p>
+    </div>
+
+    <p>
+      <strong>PageRank:</strong> A probabilistic algorithm that assigns a score to each page based on the number and quality of links pointing to it. Pages linked by other high-ranking pages get higher scores. It simulates a “random surfer” who clicks on links at random.
+    </p>
+    <div class="business-case__image-wrapper">
+      <img
+        src="Algoritm_working_images_and_gifs/google_pageRank/pageRank.gif"
+        alt="PageRank probability-based scoring"
+        class="business-case__image"
+        style="width: 500px; height: 370px;"
+      />
+      <p class="business-case__image-caption">[10] PageRank evaluating importance based on link structure</p>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Efficiently crawling and indexing billions of web pages across the internet.</li>
+      <li>Handling duplicate content, infinite loops (e.g., calendar pages), and broken links.</li>
+      <li>Ranking content accurately amidst massive spam and SEO manipulations.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Ensures fast and comprehensive indexing of newly created or updated pages.</li>
+      <li>Improves search result quality and relevance for end users.</li>
+      <li>Supports Google Ads targeting, SEO analytics, and personalized content ranking.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+    <h4 class="business-case__metric-heading">DFS (Depth-First Search)</h4>
+    <p>
+      Time Complexity: <strong><code>O(V + E)</code></strong>
+      Each vertex and edge is visited once (twice in undirected graphs).<br />
+      Space Complexity: <strong><code>O(V + E)</code></strong>
+        Visited array + recursion stack in worst case.
+    </p>
+
+    <h4 class="business-case__metric-heading">BFS (Breadth-First Search)</h4>
+    <p>
+       Time Complexity: <strong><code>O(V + E)</code></strong>
+      Each vertex and edge is explored once.<br />
+         Space Complexity: <strong><code>O(V)</code></strong>
+    Queue may hold all vertices at a level in worst case.
+    </p>
+
+    <h4 class="business-case__metric-heading">PageRank Algorithm</h4>
+    <p>
+      Time Complexity: <strong><code>O(k × (V + E))</code></strong>
+      &nbsp;&nbsp;&nbsp;<code>k</code> = number of iterations until convergence.<br />
+      Space Complexity: <strong><code>O(V)</code></strong>
+    Stores rank scores for each page.
+    </p>
+  </div>
+
+ <h3 class="business-case__subheading">Code Links</h3>
+<div class="business-case__content github-links">
+  <div class="github-link">
+    <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+    <a
+      href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Google_pageRank/dfs.cpp"
+      class="github-link__text"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View DFS Web Crawler Implementation
+    </a>
+  </div>
+
+  <div class="github-link">
+    <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+    <a
+      href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Google_pageRank/bfs.cpp"
+      class="github-link__text"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View BFS Web Crawler Implementation
+    </a>
+  </div>
+
+  <div class="github-link">
+    <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+    <a
+      href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/Google_pageRank/pageRank.py"
+      class="github-link__text"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View PageRank Algorithm Implementation
+    </a>
+  </div>
+</div>
+
+
+  <h3 class="business-case__subheading">Inferences from this Business Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>DFS and BFS together provide a complete strategy for deep and wide web crawling.</li>
+      <li>PageRank effectively ranks pages by simulating real user navigation behavior.</li>
+      <li>This combo powers Google’s web discovery, indexing, and ranking accuracy at scale.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- 9th Case -->
+<section class="business-case" id="business-case-9"> 
+  <h2 class="business-case__heading">
+    9. Smart Assignment Distribution in Google Classroom using
+    <strong>Bipartite Graph Matching</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google Classroom often needs to assign various tasks—such as group projects, lab work, or electives—to students based on eligibility and constraints. Manually managing this can be inefficient and error-prone.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;To solve this, the system models the problem as a <strong>bipartite graph</strong>, where one set represents <strong>students</strong> and the other <strong>assignments</strong>. Edges represent valid eligibility (e.g., based on prerequisites or group rules).
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">How Allocation Works</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Teachers define assignments and eligibility constraints.</li>
+      <li>A bipartite graph is formed: <code>students ↔ assignments</code>.</li>
+      <li>Each edge connects a student to assignments they qualify for.</li>
+      <li>The system applies <strong>maximum bipartite matching</strong> to assign tasks without overlap.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Algorithm Logic</h3>
+  <div class="business-case__content">
+    <p>
+      A <strong>DFS-based augmenting path algorithm</strong> finds the maximum number of student-assignment pairs. If a student is not initially matched, the algorithm attempts to reassign matched students recursively to free up capacity.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/google_classroom_assignment/bipartite.gif"
+      alt="Bipartite Graph Matching for Assignment Distribution"
+      class="business-case__image"
+      style="width: 600px; height: 400px;"
+    />
+    <p class="business-case__image-caption">
+      [11] Visual representation of bipartite matching used for fair assignment allocation.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Ensuring fairness when multiple assignments are eligible.</li>
+      <li>Preventing duplicate assignments to the same student.</li>
+      <li>Maximizing match count under complex constraints.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Automates distribution for large classrooms.</li>
+      <li>Reduces manual errors and saves teachers' time.</li>
+      <li>Personalized assignment mapping boosts student engagement.</li>
+    </ul>
+  </div>
+
+<h3 class="business-case__subheading">Performance Analysis</h3>
+<div class="business-case__content performance-metrics">
+  <p>
+    <strong>Time Complexity:</strong> <strong><code>O(V × E)</code></strong>
+    Iterates over each vertex and explores eligible edges via DFS to find augmenting paths.
+  </p>
+  <p>
+    <strong>Space Complexity:</strong> <strong><code>O(V + E)</code></strong>
+    Requires space for the adjacency structure and arrays for visited tracking and matching.
+  </p>
+</div>
+
+
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_classroom_assignment/bipartite_matching.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Bipartite Matching Code for Assignment Allocation
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Graph theory enables scalable assignment distribution.</li>
+      <li>Enhances fairness and reduces operational load.</li>
+      <li>Ideal for education platforms with dynamic, diverse classrooms.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- 10th case -->
+<section class="business-case" id="business-case-10">
+  <h2 class="business-case__heading">
+    10. Uncovering User Communities in Google Using
+    <strong>Strongly Connected Components</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      On platforms like Gmail, YouTube, and Google Meet, users often form tightly connected groups through interactions like messages, comments, and shares.
+      Detecting such <strong>user communities</strong> helps in improving friend suggestions, content personalization, and spam detection.
+    </p>
+    <p>
+      This scenario is modeled as a <strong>directed graph</strong> where each user is a node and interactions are directed edges.
+      <strong>Strongly Connected Components (SCC)</strong> algorithms allow us to detect these densely connected user clusters.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">What is an SCC?</h3>
+  <div class="business-case__content">
+    <p>
+      A <strong>Strongly Connected Component</strong> is a group of nodes in a directed graph where every node is reachable from every other node within that group.
+      In user terms, each member of an SCC can interact (directly or indirectly) with every other member — making it a solid candidate for community detection.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Algorithm Logic & Working</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Each user acts as a node; interactions (comments, likes, chats) form directed edges.</li>
+      <li>Algorithms like <strong>Kosaraju's</strong> and <strong>Tarjan’s</strong> detect SCCs efficiently.</li>
+      <li><strong>Kosaraju’s Algorithm</strong> performs two DFS passes — one on the original graph and one on the transposed graph to identify SCCs.</li>
+      <li><strong>Tarjan’s Algorithm</strong> uses a single DFS traversal with low-link values and a stack to find SCCs in linear time.</li>
+      <li>Each SCC represents a tightly connected group of users with mutual reachability.</li>
+    </ul>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/user_cluster_detection/strong.gif"
+      alt="Strongly Connected Components in User Clustering"
+      class="business-case__image"
+      style="width: 600px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [12] SCCs used to detect meaningful user communities based on interaction graphs.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Real-time analysis with millions of active users.</li>
+      <li>Dealing with sparse or one-sided connections (e.g., video views).</li>
+      <li>Maintaining user privacy during interaction pattern analysis.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Improved community-based friend and content recommendations.</li>
+      <li>Better ad targeting through interest-based user clusters.</li>
+      <li>Early detection of spam groups or coordinated fake activities.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+    <p>
+      <strong>Time Complexity:</strong> <strong><code>O(V + E)</code></strong>,
+      where <em>V</em> is the number of vertices and <em>E</em> is the number of edges in the graph.
+    </p>
+    <p>
+      <strong>Auxiliary Space:</strong> <strong><code>O(V^2)</code></strong>
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_clusters_scc/kosaraju.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Kosaraju's SCC Clustering Code
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>SCCs help uncover tight-knit communities in user graphs.</li>
+      <li>Enables smarter personalization and platform-level insights.</li>
+      <li>Applicable across Gmail, YouTube, Meet, and other Google services.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- 11th Case -->
+<section class="business-case" id="business-case-11"> 
+  <h2 class="business-case__heading">
+    11. Efficient Route Planning in Google Maps Using Shortest Path Algorithms
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google Maps uses shortest path algorithms to find optimal routes, considering traffic and road conditions. 
+      <strong>Dijkstra’s Algorithm</strong> quickly finds shortest paths for positive edge weights, ideal for real-time navigation. 
+      <strong>Bellman-Ford Algorithm</strong> handles more complex scenarios like negative weights (e.g., tolls) and detects unsafe paths. 
+      <strong>Floyd-Warshall Algorithm</strong> calculates shortest paths between all pairs of points, helping optimize Google’s network infrastructure.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">How the Algorithms Work</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Dijkstra uses a greedy strategy selecting the nearest node iteratively.</li>
+      <li>Bellman-Ford relaxes edges over multiple iterations to handle negative weights and detect cycles.</li>
+      <li>Floyd-Warshall applies dynamic programming to update shortest paths between all node pairs considering intermediates.</li>
+    </ul>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/google_maps/bellman.gif"
+      alt="Bellman-Ford Algorithm Visualization"
+      class="business-case__image"
+      style="width: 500px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [13]Visualization of Bellman-Ford algorithm relaxing edges.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Dynamic traffic patterns and road closures complicate route calculation.</li>
+      <li>Handling large, complex networks efficiently in real time.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Accurate, time-saving directions improve user experience.</li>
+      <li>Optimized routes reduce fuel consumption and emissions.</li>
+      <li>Supports autonomous vehicle navigation and network infrastructure optimization.</li>
+    </ul>
+  </div>
+
+<h3 class="business-case__subheading">Performance Analysis</h3>
+<div class="business-case__content performance-metrics">
+  <p>
+    <strong>Dijkstra’s Algorithm:</strong> Greedy approach with priority queue, 
+    <strong><code>O((V + E) log V)</code></strong> time complexity and <strong><code>O(V)</code></strong> space complexity.
+  </p>
+  <p>
+    <strong>Bellman-Ford Algorithm:</strong> Uses edge relaxation, handles negative weights, 
+    <strong><code>O(VE)</code></strong> time complexity and <strong><code>O(V)</code></strong> space complexity.
+  </p>
+  <p>
+    <strong>Floyd-Warshall Algorithm:</strong> Dynamic programming for all-pairs shortest paths, 
+    <strong><code>O(V³)</code></strong> time complexity and <strong><code>O(V²)</code></strong> space complexity.
+  </p>
+</div>
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Algorithms/blob/main/dijkstra.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Dijkstra's Algorithm Code
+      </a>
+    </div>
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Algorithms/blob/main/bellman_ford.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Bellman-Ford Algorithm Code
+      </a>
+    </div>
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Algorithms/blob/main/floyd_warshall.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Floyd-Warshall Algorithm Code
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>The combination of these algorithms offers a flexible, reliable approach for Google Maps routing and network optimization.</li>
+      <li>They balance speed, accuracy, and complexity to handle various pathfinding challenges effectively.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- 12th case -->
+ <section class="business-case" id="business-case-12">
+  <h2 class="business-case__heading">
+    12. Allocation of Resources in Data Centers Using
+    <strong>Assignment Problem</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google manages a vast network of data centers globally. To maintain efficiency,
+      computing tasks must be assigned to servers or locations in an optimized way.
+      The <strong>Assignment Problem</strong> helps in achieving balanced resource allocation and minimal operational delays.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Problem Modeling</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Each server/task is treated as a node in a bipartite graph.</li>
+      <li>Weights represent cost or time to assign a task to a server.</li>
+      <li>Goal: Minimize total cost or maximize resource efficiency.</li>
+    </ul>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/resource_Allocation/Assignment_problem.png"
+      alt="Assignment Problem Illustration"
+      class="business-case__image"
+      style="width: 600px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [14] Visualization of Assignment Problem applied to task-server mapping in a data center.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Optimal task allocation under heavy and dynamic load conditions.</li>
+      <li>Latency management between geographically distributed servers.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Improved server utilization and task throughput.</li>
+      <li>Reduced energy consumption and operational costs.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+      <p>
+        <strong>Time Complexity:</strong> <code>O(2N × N)</code>, where N is the number of tasks or servers.
+      </p>
+      <p>
+        <strong>Space Complexity:</strong> <code>O(N²)</code>, for storing cost matrix and matching results.
+      </p>
+  </div>
+
+    <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Algorithms/blob/main/dijkstra.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Assignment Problem Code (Hungarian Method)
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Assignment Problem supports optimized resource utilization in data centers.</li>
+      <li>Efficient task-server mapping reduces idle time and boosts performance.</li>
+      <li>Widely applicable to Google’s backend systems for large-scale operations.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+ <!-- 13th Case -->
+<section class="business-case" id="business-case-13">
+  <h2 class="business-case__heading">
+    13. Tab Management in Google Chrome using
+    <strong>LRU Cache (Doubly Linked List + Hash Map)</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google Chrome handles dozens of open tabs simultaneously. Managing memory efficiently across these tabs
+      is vital for performance. Chrome uses an <strong>LRU Cache mechanism</strong> to track tab usage and unload the least recently used tabs when memory thresholds are reached.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;This is implemented using a combination of a <strong>Doubly Linked List</strong> (to maintain order of recent usage) and a <strong>Hash Map</strong> (to enable <code>O(1)</code> lookup). When a tab is accessed, it’s moved to the front; when memory is full, the tab at the end (least recently used) is discarded.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs\tab_management\Doubly-Linked-Lists.gif"
+      alt="LRU Cache in Chrome Tab Management"
+      class="business-case__image"
+      style="width: 600px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [15] LRU Cache using Doubly Linked List and Hash Map for efficient tab memory tracking in Google Chrome.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Tracking most and least recently used tabs in real-time.</li>
+      <li>Ensuring fast lookup, insertion, and removal operations simultaneously.</li>
+      <li>Preventing memory bloat from inactive or hidden tabs.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Reduced memory usage and smoother performance for users with multiple open tabs.</li>
+      <li>Tabs are reloaded efficiently when revisited, improving user experience.</li>
+      <li>Chrome remains responsive even on low-end systems with limited RAM.</li>
+    </ul>
+  </div>
+
+<h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+<div class="business-case__content">
+  <p>
+   <strong>LRU Cache:</strong> Chrome uses a mix of <strong>Doubly Linked List</strong> and <strong>Hash Map</strong>
+    to implement an efficient Least Recently Used (LRU) Cache system.
+  </p>
+  <p>
+  The <strong>Hash Map</strong> lets Chrome instantly find any open tab in <code>O(1)</code> time by using the tab's ID or name.
+    But hash maps don't keep track of usage order.
+  </p>
+  <p>
+That’s where the <strong>Doubly Linked List</strong> helps , it keeps tabs arranged by recent usage. When a tab is accessed,
+    it’s moved to the front of the list. If memory is full, the tab at the end (least recently used) is removed.
+  </p>
+  <p>
+This combo ensures tabs are updated, found, and removed  all in constant time ,while maintaining a strict order of activity.
+    It solves both speed and memory problems in one go.
+  </p>
+</div>
+
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+    <h4 class="business-case__metric-heading">LRU Cache Operations</h4>
+    <p>
+      Time Complexity: <strong><code>O(1)</code></strong> for insertion, deletion, and access.<br />
+      Space Complexity: <strong><code>O(N)</code></strong> where <code>N</code> is the maximum number of tabs stored in memory.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/tab_management/lru_cache.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View code for LRU Cache – Tab Management in Chrome
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences from this Business Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Chrome leverages core data structures to manage memory-heavy environments efficiently.</li>
+      <li>Combining Doubly Linked List and Hash Map offers both speed and flexibility.</li>
+      <li>Demonstrates the power of algorithmic design in user-facing, high-performance applications.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- 14th case -->
+ <!-- 14th Case -->
+<section class="business-case" id="business-case-14">
+  <h2 class="business-case__heading">
+    14. Google Drive File Search using
+    <strong>Segment Trees (Range Query over Metadata)</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google Drive stores billions of files, each tagged with metadata like size, date, and owner. To quickly answer complex user queries—like filtering files by size or modified date—Drive uses <strong>Segment Trees</strong> to search through metadata ranges efficiently.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;Segment Trees break the metadata into manageable segments and store summarized data for each. During a search, Drive only visits relevant segments, skipping the rest—ensuring instant responses even on massive datasets.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/google_drive_metadata/segment.gif"
+      alt="Segment Tree for Google Drive Metadata Search"
+      class="business-case__image"
+      style="width: 600px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [16] Segment Tree enables fast range-based file queries on metadata like file size, date, and owner.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Real-time filtering across billions of files.</li>
+      <li>Handling dynamic file additions, deletions, and updates.</li>
+      <li>Maintaining low latency under large-scale metadata.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Delivers fast, responsive file search across all user devices.</li>
+      <li>Supports smart suggestions and advanced filters.</li>
+      <li>Improves performance as data grows without slowing down.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+  <div class="business-case__content">
+    <p>
+      <strong>Segment Trees:</strong> A hierarchical structure that splits metadata into ranges and stores aggregate info (like count, max, or sum). When a query runs, only matching segments are accessed enabling fast range filtering.It also allows quick updates when files are added or removed without rebuilding the entire structure.
+    </p>
+  </div>
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+    <h4 class="business-case__metric-heading">Segment Tree Operations</h4>
+    <p>
+      Time Complexity: <strong><code>O(log N)</code></strong> for both query and update operations<br />
+      Space Complexity: <strong><code>O(N)</code></strong> where <code>N</code> is the number of file metadata entries
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_drive/segment_tree.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View code for Segment Tree – Google Drive File Search
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences from this Business Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Segment Trees power real-time metadata filtering in large-scale systems.</li>
+      <li>Offers a clean balance between speed and scalability.</li>
+      <li>Helps build fast, intelligent search experiences for cloud platforms.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- 15th case -->
+ <!-- 15th Case -->
+<section class="business-case" id="business-case-15"> 
+  <h2 class="business-case__heading">
+    15. Google Docs Plagiarism Detection using
+    <strong>Rabin-Karp + KMP Algorithms</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      In Google Docs, ensuring originality is critical — especially in educational and collaborative settings. To detect copied or plagiarized content, Google scans massive documents against a database of known texts. To handle this efficiently, it combines <strong>Rabin-Karp</strong> (for fast pattern detection) and <strong>KMP</strong> (for accurate match verification).
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;Rabin-Karp uses rolling hash to rapidly scan and flag potential sentence-level matches. However, to eliminate false positives from hash collisions, Google then uses the KMP algorithm to verify if the pattern matches exactly, using its prefix-based search strategy.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Why Use Both Algorithms?</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>
+        <strong>Rabin-Karp</strong> efficiently identifies potential matches using hash values.
+      </li>
+      <li>
+        <strong>KMP</strong> confirms those matches without backtracking, using the LPS (Longest Prefix Suffix) table.
+      </li>
+      <li>
+        This hybrid approach combines <strong>speed</strong> (Rabin-Karp) with <strong>accuracy</strong> (KMP).
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Rabin-Karp: Fast Pattern Detection</h3>
+  <div class="business-case__content">
+    <p>
+      Rabin-Karp computes a hash of the pattern and compares it with rolling hashes of substrings in the text. If a hash matches, it flags the location for deeper inspection. This avoids scanning every character and allows fast multi-pattern detection.
+    </p>
+  </div>
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/google_docs_plagarism/robin_karp.png"
+      alt="Rabin-Karp Rolling Hash for Plagiarism Detection"
+      class="business-case__image"
+      style="width: 600px; height: 430px;"
+    />
+    <p class="business-case__image-caption">
+      [17] Rabin-Karp uses rolling hash to quickly flag potential text matches.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">KMP: Exact Match Verification</h3>
+  <div class="business-case__content">
+    <p>
+      Once a match is suspected, KMP performs a character-level check using the LPS table. It avoids unnecessary comparisons by remembering past match information, ensuring fast and precise results.
+    </p>
+  </div>
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/google_docs_plagarism/kmp.gif"
+      alt="KMP Algorithm in Action for Plagiarism Confirmation"
+      class="business-case__image"
+      style="width: 600px; height: 350px;"
+    />
+    <p class="business-case__image-caption">
+      [18] KMP algorithm confirms actual text match using prefix pattern shifts.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Comparing large documents against massive datasets efficiently.</li>
+      <li>Handling false positives due to hash collisions in Rabin-Karp.</li>
+      <li>Maintaining performance during real-time editing in Docs.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Ensures originality of user content with fast background checks.</li>
+      <li>Boosts trust in collaborative academic and enterprise documents.</li>
+      <li>Improves user experience with real-time alerts for possible plagiarism.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+    <h4 class="business-case__metric-heading">KMP Algorithm</h4>
+    <p>
+      Time Complexity: <strong><code>O(n + m)</code></strong><br />
+      Auxiliary Space: <strong><code>O(m)</code></strong> for LPS array of size m
+    </p>
+
+    <h4 class="business-case__metric-heading">Rabin-Karp Algorithm</h4>
+    <p>
+      Time Complexity: <strong><code>O(n + m)</code></strong> average, <strong><code>O(n × m)</code></strong> worst-case<br />
+      Auxiliary Space: <strong><code>O(1)</code></strong>
+    </p>
+  </div>
+
+<h3 class="business-case__subheading">Code Links</h3>
+<div class="business-case__content github-links">
+  <div class="github-link">
+    <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+    <a
+      href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_docs_plagiarism/rabin_karp.cpp"
+      class="github-link__text"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View code for Rabin-Karp – Plagiarism Detection
+    </a>
+  </div>
+  <div class="github-link">
+    <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+    <a
+      href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_docs_plagiarism/kmp.cpp"
+      class="github-link__text"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View code for KMP – Pattern Matching Verification
+    </a>
+  </div>
+</div>
+
+  <h3 class="business-case__subheading">Inferences from this Business Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Combining algorithms balances speed and accuracy in large-scale systems.</li>
+      <li>Google Docs optimizes real-time scanning by using the right algorithm at the right step.</li>
+      <li>This showcases how hybrid techniques improve intelligent document processing.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 16th case -->
+ <!-- 16th Case -->
+<section class="business-case" id="business-case-16">
+  <h2 class="business-case__heading">
+    16. Face Clustering in Google Photos using
+    <strong>KD Trees (Efficient Nearest Neighbor Search)</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google Photos automatically groups faces across thousands of user images. To make this experience smooth and accurate,
+      it uses facial embeddings ,numerical vectors representing face features. Finding visually similar faces in this high-dimensional space
+      is powered by the <strong>KD Tree</strong> data structure.
+    </p>
+    <p>
+      &nbsp;&nbsp;&nbsp;KD Trees allow Google to quickly retrieve nearest neighbors—photos with faces most similar to a given one
+      enabling fast and accurate clustering. As new images are added, embeddings are inserted into the KD Tree, and matches are efficiently found
+      without scanning all photos.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/googlePhotos/kD-tree.gif"
+      alt="KD Tree for Face Embedding Search in Google Photos"
+      class="business-case__image"
+      style="width: 600px; height: 450px;"
+    />
+    <p class="business-case__image-caption">
+      [19] KD Tree partitions high-dimensional face embeddings to support rapid similarity-based clustering in Google Photos.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Challenges</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Managing billions of high-dimensional face vectors across devices.</li>
+      <li>Supporting fast face grouping as new images are uploaded.</li>
+      <li>Balancing accuracy and latency in nearest neighbor search on mobile.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Market Benefits</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Clustering reduces manual tagging effort, saving time for users.</li>
+      <li>Fast on-device similarity search supports privacy and offline usage.</li>
+    </ul>
+  </div>
+
+  <h3 class="business-case__subheading">Algorithms & Design Techniques</h3>
+  <div class="business-case__content">
+    <p>
+      <strong>KD Tree:</strong> A binary tree structure that recursively partitions k-dimensional space 
+      (e.g., 128D facial embeddings). Each node splits the space along a specific axis. During a nearest neighbor query, the tree is traversed 
+      to find closest points based on Euclidean distance.
+    </p>
+    <p>
+      Only relevant branches of the tree are explored, drastically reducing the number of comparisons.
+      This makes face similarity search fast, even with a large photo library.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+<div class="business-case__content performance-metrics">
+  <h4 class="business-case__metric-heading">KD Tree Operations</h4>
+  <div style="overflow-x: auto;">
+    <table class="business-case__table" style="width: 100%; border-collapse: collapse; text-align: left;">
+      <thead>
+        <tr style="background-color: #f0f0f0;">
+          <th style="padding: 10px; border: 1px solid #ccc;">Operation</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Description</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Time Complexity</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Space Complexity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Insert</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Inserts a new point into the KD Tree</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log n) average, O(n) worst</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Search</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Searches for a point in the KD Tree</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log n) average, O(n) worst</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Nearest Neighbor</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Finds the nearest neighbor to a given point</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log n) average, O(n) worst</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log n)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Range Search</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Finds all points within a given range</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(√n + k) average, O(n) worst</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(n)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  <h3 class="business-case__subheading">Code Links</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_photos/kd_tree.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View code for KD Tree – Face Clustering in Google Photos
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences from this Business Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>KD Trees enable fast and scalable face clustering in high-dimensional embedding space.</li>
+      <li>Boosts user experience in Google Photos via automatic grouping and tagging.</li>
+      <li>Combines algorithmic depth with real-world impact at petabyte scale.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+<!-- 17th Case -->
+<section class="business-case" id="business-case-17">
+  <h2 class="business-case__heading">
+    17. Google Sheets: Real-Time Range Sum with
+    <strong>Fenwick Tree (Binary Indexed Tree)</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      In Google Sheets, formulas like <code>=SUM(A1:A100000)</code> must return results instantly, even during live edits. To maintain this responsiveness across massive datasets, Google Sheets can leverage the <strong>Fenwick Tree</strong>.
+    </p>
+    <p>
+      The structure enables fast dynamic updates and quick range queries without recalculating from scratch. As users add or edit data, the tree updates affected sums efficiently—ensuring the spreadsheet remains smooth and interactive, even for enterprise-scale operations.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/googleSheets/fenwickTree.gif"
+      alt="Fenwick Tree for Real-Time Spreadsheet Range Sum"
+      class="business-case__image"
+      style="width: 600px; height: 340px;"
+    />
+    <p class="business-case__image-caption">
+      [20] Fenwick Tree supports real-time updates and instant prefix/range sum in Google Sheets.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Why Fenwick Tree?</h3>
+  <div class="business-case__content">
+    <p>
+      Unlike full recomputation, Fenwick Tree precomputes prefix sums and updates only necessary nodes. This design is ideal for spreadsheet cells that change frequently, while still supporting lightning-fast summation and analytics on large ranges.
+    </p>
+  </div>
+<h3 class="business-case__subheading">Performance Analysis</h3>
+<div class="business-case__content performance-metrics">
+  <h4 class="business-case__metric-heading">Fenwick Tree Operations</h4>
+  <div class="table-wrapper" style="overflow-x: auto;">
+    <table class="business-case__table" style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th style="padding: 10px; border: 1px solid #ccc;">Operation</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Description</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Time Complexity</th>
+          <th style="padding: 10px; border: 1px solid #ccc;">Space Complexity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Update</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Update a cell value and adjust all related prefix sums</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log N)</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(N)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Prefix Sum</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Get sum from cell A1 to Ai</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log N)</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(N)</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid #ccc;">Range Sum</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">Get sum from Ai to Aj (i ≤ j)</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(log N)</td>
+          <td style="padding: 10px; border: 1px solid #ccc;">O(N)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="business-case__note" style="margin-top: 1rem;">
+    Total Time Complexity: <strong><code>O(N log N)</code></strong><br />
+    Auxiliary Space: <strong><code>O(N)</code></strong>
+  </p>
+</div>
+
+
+  <h3 class="business-case__subheading">Code Link</h3>
+  <div class="business-case__content github-links">
+    <div class="github-link">
+      <img src="images/github.png" alt="GitHub" class="github-link__icon" />
+      <a
+        href="https://github.com/Apeksha200/Apeksha.github.io/blob/main/codes/google_sheets/fenwick_tree.cpp"
+        class="github-link__text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Code – Fenwick Tree for Google Sheets
+      </a>
+    </div>
+  </div>
+
+  <h3 class="business-case__subheading">Inferences from this Case</h3>
+  <div class="business-case__content">
+    <ul class="business-case__list">
+      <li>Enables real-time formula updates, regardless of dataset size.</li>
+      <li>Efficient under frequent edits, ideal for collaborative spreadsheets.</li>
+      <li>Strikes the perfect balance between performance and simplicity.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- 18th Case -->
+<section class="business-case" id="business-case-18">
+  <h2 class="business-case__heading">
+    18. Google News Personalization using <strong>Red-Black Trees</strong>
+  </h2>
+
+  <div class="business-case__content">
+    <p>
+      Google News delivers personalized article feeds by ranking millions of articles based on relevance and user preferences in real-time. To efficiently manage the dynamic updates, insertions, and deletions of articles, Google uses <strong>Red-Black Trees</strong>, a self-balancing binary search tree.
+    </p>
+    <p>
+      This structure guarantees balanced trees, allowing fast search, insert, and delete operations, which are crucial for timely personalized news feeds.
+    </p>
+  </div>
+
+  <div class="business-case__image-wrapper">
+    <img
+      src="Algoritm_working_images_and_gifs/googleNews/redBlackTrees.gif"
+      alt="Red-Black Trees for Google News Personalization"
+      class="business-case__image"
+      style="width: 620px; height: 400px;"
+    />
+    <p class="business-case__image-caption">
+      [21] Red-Black Trees enable balanced and efficient dynamic operations for personalized news ranking.
+    </p>
+  </div>
+
+  <h3 class="business-case__subheading">Performance Analysis</h3>
+  <div class="business-case__content performance-metrics">
+   <table class="business-case__table" style="width: 100%; border-collapse: collapse; table-layout: fixed; text-align: center;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 8px; width: 8%;">No.</th>
+      <th style="border: 1px solid #ddd; padding: 8px; width: 52%;">Algorithm</th>
+      <th style="border: 1px solid #ddd; padding: 8px; width: 40%;">Time Complexity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">1.</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Search</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">O(log n)</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">2.</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Insert</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">O(log n)</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">3.</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">Delete</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">O(log n)</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  
+  <h3 class="business-case__subheading">Why Red-Black Trees?</h3>
+  <div class="business-case__content">
+    <p>
+      Red-Black Trees ensure that the tree remains balanced after every insertion or deletion, providing consistent and efficient operation times for dynamic data structures. This is essential for Google News to quickly update and search millions of articles while maintaining personalized feeds.
+    </p>
+  </div>
+
+</section>
+
+
+
+
+
     <!-- References Section -->
     <section class="references">
       <h2 class="references__heading">References</h2>
@@ -1368,14 +2723,14 @@
           <a
             href="https://www.geeksforgeeks.org/hash-table-data-structure/"
             target="_blank"
-            >GeeksforGeeks. (n.d.). Hash Table Data Structure.</a
+            >GeeksforGeeks. Hash Table Data Structure.</a
           >
         </li>
         <li>
           <span class="reference-label">[3]</span>
           Wikimedia Commons. “File.gif.” Available at:
           <a href="https://commons.wikimedia.org/wiki/File.gif" target="_blank"
-            >Wikimedia Commons. (n.d.). File.gif.</a
+            >Wikimedia Commons. File.gif.</a
           >
         </li>
         <li>
@@ -1384,12 +2739,12 @@
           <a
             href="https://en.m.wikipedia.org/wiki/File:Skip_list_add_element-en.gif"
             target="_blank"
-            >Wikimedia Commons. (n.d.). Skip List Add Element.</a
+            >Wikimedia Commons. Skip List Add Element.</a
           >
         </li>
         <li>
           <span class="reference-label">[5]</span>
-          Skiena, Steven. “DFS Animation for Graph Traversal.” Available at:
+          Skiena, Steven. “DFS ,BFS Animation for Graph Traversal.” Available at:
           <a
             href="https://www3.cs.stonybrook.edu/~skiena/combinatorica/animations/search.html"
             target="_blank"
@@ -1403,7 +2758,7 @@
           <a
             href="https://brilliant.org/wiki/dijkstras-short-path-finder/"
             target="_blank"
-            >Brilliant. (n.d.). Dijkstra’s Algorithm - Shortest Path.</a
+            >Brilliant. Dijkstra’s Algorithm - Shortest Path.</a
           >
         </li>
         <li>
@@ -1412,7 +2767,7 @@
           <a
             href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"
             target="_blank"
-            >Wikipedia. (n.d.). Dijkstra’s Algorithm.</a
+            >Wikipedia. Dijkstra’s Algorithm.</a
           >
         </li>
         <li>
@@ -1422,10 +2777,150 @@
             href="https://www.geeksforgeeks.org/interval-tree/"
             target="_blank"
           >
-            GeeksforGeeks. (n.d.). Interval Tree – Efficient Time Interval
+            GeeksforGeeks. Interval Tree – Efficient Time Interval
             Search.
           </a>
+          <li>
+  <span class="reference-label">[9]</span>
+  GeeksforGeeks. “Topological Sorting.” Available at:
+  <a
+    href="https://www.geeksforgeeks.org/topological-sorting/"
+    target="_blank"
+  >GeeksforGeeks. Topological Sorting Algorithm.</a>
+</li>
+
         </li>
+
+          <li>
+      <span class="reference-label">[10]</span>
+      Sandipan Dey. “PageRank and Power Iteration.” Available at:
+      <a
+        href="https://sandipanweb.wordpress.com/2017/01/02/page-rank-and-power-iteration/"
+        target="_blank"
+      >
+        Sandipan Dey. (2017). PageRank & Power Iteration – WordPress Blog.
+      </a>
+    </li>
+
+
+       <li>
+      <span class="reference-label">[11]</span>
+      Inginious. “Friendless Problem – Maximum Bipartite Matching.” Available at:
+      <a
+        href="https://inginious.org/course/competitive-programming/graphs-prob-friendless"
+        target="_blank"
+        >Inginious.  Friendless Problem – Graph Matching.</a>
+    </li>
+
+   
+  <li>
+    <span class="reference-label">[12]</span>
+    Wikipedia contributors. “Tarjan's strongly connected components algorithm.” Available at:
+    <a
+      href="https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Wikipedia.  Tarjan's strongly connected components algorithm.
+    </a>
+  </li>
+
+  <li>
+  <span class="reference-label">[13]</span>
+  Wikimedia Commons contributors. “Bellman–Ford algorithm example.” Available at:
+  <a
+    href="https://commons.wikimedia.org/wiki/File:Bellman%E2%80%93Ford_algorithm_example.gif"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Wikimedia Commons. Bellman–Ford algorithm example.
+  </a>
+</li>
+ <li>
+        <span class="reference-label">[14]</span>
+        Wikipedia contributors. “Assignment problem.” Available at:
+        <a
+          href="https://en.wikipedia.org/wiki/Assignment_problem"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Wikipedia. Assignment problem.
+        </a>
+      </li>
+
+      <li>
+  <span class="reference-label">[15]</span>
+  AKCoding. “Exploring the Doubly Linked Lists.” Available at:
+  <a
+    href="https://akcoding.com/dsa/linear-data-structures/exploring-the-doubly-linked-lists/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    AKCoding. Exploring the Doubly Linked Lists.
+  </a>
+</li>
+
+<li>
+  <span class="reference-label">[16]</span>
+  Scaler Topics. “Segment Trees in Data Structures.” Available at:
+  <a href="https://www.scaler.com/topics/data-structures/segment-trees-in-data-structure/" target="_blank">
+    https://www.scaler.com/topics/data-structures/segment-trees-in-data-structure/
+  </a>
+</li>
+
+ <li>
+       <span class="reference-label">[17]</span>GeeksforGeeks. 
+      <a 
+        href="https://www.geeksforgeeks.org/introduction-to-pattern-searching/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Introduction to Pattern Searching – Rabin-Karp
+      </a>
+    </li>
+    <li>
+      <span class="reference-label">[18]</span>Scaler Topics.
+      <a 
+        href="https://www.scaler.com/topics/data-structures/kmp-algorithm/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        KMP Algorithm – String Pattern Matching
+      </a>
+    </li>
+
+    <li>
+  <span class="reference-label">[19]</span>
+  Stollee, J. “k-d Tree Nearest Neighbor Search.” Available at:
+  <a
+    href="https://stollee.org/2011/09/k-d-tree-nearest-neighbor-search.html"
+    target="_blank"
+    >https://stollee.org/2011/09/k-d-tree-nearest-neighbor-search.html</a
+  >
+</li>
+
+<li>
+  <span class="reference-label">[20]</span>
+  Carpanese. “A Visual Introduction to Fenwick Tree.” Available at:
+  <a
+    href="https://medium.com/carpanese/a-visual-introduction-to-fenwick-tree-89b82cac5b3c"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    https://medium.com/carpanese/a-visual-introduction-to-fenwick-tree-89b82cac5b3c
+  </a>
+</li>
+
+ <li>
+        <span class="reference-label">[21]</span>
+        Khalil Bailey. “Simple Red-Black Trees.” Available at:
+        <a href="https://medium.com/@khallilbailey/simple-red-black-trees-b54642bd7652" target="_blank" rel="noopener noreferrer">
+          https://medium.com/@khallilbailey/simple-red-black-trees-b54642bd7652
+        </a>
+      </li>
+
+
+
       </ul>
     </section>
 
